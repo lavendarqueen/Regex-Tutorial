@@ -9,17 +9,18 @@ In exploring our search characters and expressions, we will be using validation 
 ## Table of Contents
 
 - [Regex Components](#regex-components)
+- [Bracket Expressions](#bracket-expressions)
 - [Anchors](#anchors)
 - [Quantifiers](#quantifiers)
 - [OR Operator](#or-operator)
 - [Character Classes](#character-classes)
 - [Flags](#flags)
 - [Grouping and Capturing](#grouping-and-capturing)
-- [Bracket Expressions](#bracket-expressions)
 - [Greedy and Lazy Match](#greedy-and-lazy-match)
 - [Boundaries](#boundaries)
-- [Back-references](#back-references)
+- [Back References](#back-references)
 - [Lookarounds](#lookarounds)
+- [Regex Javascript Methods](#regex-javascript-methods)
 
 ## Regex Components
 
@@ -95,9 +96,9 @@ The following are common character classes:
 
 Flags are placed at the end of a refex, after the second slash. They define additional functionality ro limits for the regex. There are six optional flags we can use (separately or together, and in any order). Hereare the three we are likely to need:
 
-- <span style="color: magenta;">g</span> is a global search. The regex should be tested against all possible matches in a string.
-- <span style="color: magenta;">i</span> Case is to be ignored while attempting a match in a string (case insensitive search).
-- <span style="color: magenta;">m</span> a multi-line input string should be treated as multiple lines.
+- (<span style="color: magenta;">g</span>) is a global search. The regex should be tested against all possible matches in a string.
+- (<span style="color: magenta;">i</span>) Case is to be ignored while attempting a match in a string (case insensitive search).
+- (<span style="color: magenta;">m</span>) a multi-line input string should be treated as multiple lines.
 
 ### Grouping and Capturing
 
@@ -123,7 +124,7 @@ The backslash-star (<span style="color: magenta;">\*</span>) indicates that we a
 
 The dollar sign (<span style="color: magenta;">$</span>) denotes the end of our string and the forward slash (<span style="color: magenta;">/</span>) indicates that we are at the end of our regex expression.
 
-### Greedy and Lazy Matches
+### Greedy and Lazy Match
 
 Quantifiers are inherently <span style="font-weight: bold;">"greedy"</span> and will match as many instances of these particular patterns as possible.
 
@@ -131,14 +132,24 @@ Each of these quantifiers can be made <span style="font-weight: bold;">"lazy"</s
 
 ### Boundaries
 
-### Back-references
+Boundaries indicate the beginnings and endings of lines and words, and other patterns indicating in some way that a match is possible, including look arounds (look-ahead, look-behind, and conditional expressions.)
+
+### Back References
+
+Backreferences refer to a previously captured group in the same regular expression.
 
 ### Lookarounds
+
+Lookarounds can be used in both positive and negative expressions as follows:
 
 - Positive lookahead <span style="color: magenta;">(?<=...>)</span>
 - Positive lookbehind <span style="color: magenta;">(?<=...>)</span>
 - Negative lookahead <span style="color: magenta;">(?!...)</span>
 - Negative lookbehind <span style="color: magenta;">(?<!...)</span>
+
+### Regex Javascript Methods
+
+Regular expressions are used in JavaScript with theREgExp methods: test(). and exec(). and with the String methods match()., matchAll()., replace()., replaceAll()., search()., and split().
 
 ## Author
 
