@@ -27,7 +27,7 @@ The tutorial uses a regex expression that authenticates an email address to demo
 
 ## Credits
 
-I did not collaorate with any individuals. I did, however, consult the following third party assets:
+I did not collaborate with any individuals. I did, however, consult the following third party assets:
 
 - Regex Tutorial Starter Code from coding-boot-camp: https://github.com/coding-boot-camp/bug-free-goggles
 - Introduction to Regular Expressions by The Coding Train: https://www.youtube.com/watch?v=7DG3kCDx53c&list=RDCMUCvjgXvBlbQiydffZU7m1_aw&start_radio=1&rv=7DG3kCDx53c&t=1
